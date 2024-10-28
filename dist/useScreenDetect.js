@@ -85,5 +85,11 @@ var useDetectScreen = function useDetectScreen() {
       }
     }
   }, [screenSize]);
+  return {
+    screenSize: screenSize,
+    isMobile: isMobile,
+    isTablet: isTablet,
+    isLaptop: isLaptop
+  };
 };
 var _default = exports["default"] = useDetectScreen;

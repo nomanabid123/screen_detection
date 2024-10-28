@@ -69,6 +69,7 @@ const useDetectScreen = ()=>{
 
   },[screenSize])
 
+  return { screenSize, isMobile, isTablet, isLaptop };
 
 }
 
