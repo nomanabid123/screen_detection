@@ -2,11 +2,17 @@
   "name": "screen_detection",
   "version": "1.0.0",
   "description": "Detect the current screen, either it is mobile, tablet or laptop",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module":"dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-		"build": "babel src --out-dir dist"
-	},
+    "build": "babel src --out-dir dist"
+  },
   "keywords": [
+    "react",
+    "next",
     "screen",
     "is",
     "mobile",
@@ -20,11 +26,13 @@
   "author": "Noman Abid",
   "license": "ISC",
   "dependencies": {
-		"@babel/cli": "^7.24.8",
-		"@babel/core": "^7.24.8",
-		"@babel/preset-env": "^7.24.8",
-		"@babel/preset-react": "^7.24.7",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1"
-	}
+    "@babel/cli": "^7.25.9",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9"
+  }
 }
